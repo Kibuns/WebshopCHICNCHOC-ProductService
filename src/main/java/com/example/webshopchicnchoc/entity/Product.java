@@ -14,12 +14,15 @@ import javax.persistence.Table;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-@Table(name = "user")
+@Table(name = "product")
 
-public class User {
-
+public class Product {
     @Id
-    private int id;
+    public int id;
     public String name;
-    public String lastname;
+    public double price;
+    public String image;
+    public String type;
+    public String description;
+    public int stock;
 }
