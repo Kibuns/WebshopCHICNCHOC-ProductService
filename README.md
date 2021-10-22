@@ -1,5 +1,5 @@
 # Webshop Chic&Choc Product Service
-<p>This repository is a part of my webshop project. It's an microservice API that handles products</p>
+<p>This repository is a part of my webshop project. It's a microservice API that handles products</p>
 
 ### Frontend Repo's:
 <a href="https://github.com/Kibuns/Webshop-ChicnChoc">Webshop react web application</a>
