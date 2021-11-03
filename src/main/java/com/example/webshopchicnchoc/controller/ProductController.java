@@ -23,13 +23,13 @@ public class ProductController {
     }
 
     //Get user
-    @GetMapping("/users")
+    @GetMapping("/products")
     public List<Product> getProducts() {
         return service.getProducts();
     }
 
     //Get users
-    @GetMapping("/user/{id}")
+    @GetMapping("/product/{id}")
     public Product findProductById(@PathVariable int id) {
         return service.getProductById(id);
     }
