@@ -2,6 +2,7 @@ package com.example.webshopchicnchoc.productTest;
 
 import com.example.webshopchicnchoc.entity.Product;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
@@ -30,6 +31,7 @@ public class ProductAcceptanceTest {
     ObjectMapper objectMapper;
 
     @Test
+    @Disabled
     void getProductById() throws Exception {
 
         mockMvc.perform(get("/api/product/" + 1))
