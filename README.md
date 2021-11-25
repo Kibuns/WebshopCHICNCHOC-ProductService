@@ -11,3 +11,14 @@
 <a href="https://github.com/Kibuns/WebshopOrderService">Order Service</a>
 
 <a href="https://github.com/Kibuns/WebshopGatewayService">Gateway Service</a>
+
+## API Mapping
+```/api/products```: returns an array of all the products in the database
+
+```/api/product/{id}```: return the product with the matching {id}
+
+```/api/post```: posts a product object to the product database. May not have an id field, id is autoincrement
+
+```/api/update```: updates the product that you give to it, it does this by looking for the id and over riding that product
+
+```/api/delete/{id}```: deletes the product associated with {id}
