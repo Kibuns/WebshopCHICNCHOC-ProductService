@@ -22,7 +22,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 
 @SpringBootTest
 @AutoConfigureMockMvc
-public class ProductAcceptanceTest {
+public class ProductIntegrationTest {
 
     @Autowired
     private MockMvc mockMvc;
@@ -31,7 +31,6 @@ public class ProductAcceptanceTest {
     ObjectMapper objectMapper;
 
     @Test
-    @Disabled
     void getProductById() throws Exception {
 
         mockMvc.perform(get("/api/product/" + 1))

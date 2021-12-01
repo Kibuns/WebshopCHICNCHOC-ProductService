@@ -18,24 +18,19 @@ import static org.mockito.Mockito.verify;
 @DataJpaTest
 public class ProductServiceTest {
 
-    //testing mocked repo
-
-    //mock = mocking is creating objects that simulate the behavior of real objects.
-    //so this means that it simulate the behaviour of the repository for products which will get all the products from the database
-
     @Mock
     private ProductRepository productRepository;
     private AutoCloseable autoCloseable;
     private ProductService underTest;
 
-    //before start of every test
+    //before every test
     @BeforeEach
     void setUp() {
         autoCloseable = MockitoAnnotations.openMocks(this);
         underTest = new ProductService(productRepository);
     }
 
-    //end of every test
+    //after every test
     @AfterEach
     void tearDown() throws Exception {
         autoCloseable.close();
@@ -73,10 +68,5 @@ public class ProductServiceTest {
         underTest.deleteProduct(1);
         //then
         verify(productRepository).deleteById(1);
-    }
-
-    @Test
-    @Disabled
-    void updateProduct() {
     }
 }
